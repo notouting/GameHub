@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+
+<body class="dark:bg-gray-900">
+    <!-- npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch -->
+
+    <header class="text-gray-400 bg-slate-50 dark:bg-gray-900 ">
+        <div class="container mx-auto flex flex-wrap px-5 flex-col md:flex-row items-center">
+            <a
+                class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl xl:block lg:hidden">Tailblocks</span>
+            </a>
+            <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+                <button
+                    class="inline-flex items-center dark:bg-gray-800 dark:text-white border-2 hover:bg-slate-300 text-black mode-changer  py-1 px-3 focus:outline-none dark:hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Dark
+                    mode
+
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="text-gray-400 bg-slate-50 dark:bg-gray-900 min-h-[600px]">
+        <div class="container mx-auto pt-10 px-6">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-[488px]">
+                    <h2 class="text-[40px] text-black single-title font-bold dark:text-white">
+                      
+                    </h2>
+                    <p class="text-black single-description dark:text-white">
+                      
+                    </p>
+                    <button class="bg-yellow-300 text-black border read-more border-black rounded-lg p-1">Read more</button>
+                    <div class="grid grid-cols-2 w-full gap-3 mt-5">
+                        <div class="platforms-box">
+                            <h3 class="text-gray-500 font-bold">Platforms</h3>
+                            <div class="platforms-list">
+                                <p class="text-white"></p>
+                            </div>
+                        </div>
+                        <div class="metascore-box">
+                            <h3 class="text-gray-500 font-bold">Metascore</h3>
+                            <p class="game-rating bg-green-800 text-green-400 px-3 rounded-lg inline-block py-1">90</p>
+                        </div>
+                        <div class="genres-box">
+                            <h3 class="text-gray-500 font-bold">Genres</h3>
+                            <div class="genres-list"></div>
+                        </div>
+                        <div class="publishers-box">
+                            <h3 class="text-gray-500 font-bold">Publishers</h3>
+                            <p class="publisher dark:text-white text-black"></p>
+                        </div>
+                    </div>
+                    <h3 class="text-gray-500 font-bold mt-5">Stores</h3>
+                    <div class="flex flex-wrap items-center pb-32 stores-res gap-3">
+                    </div>
+                </div>
+
+                <div class="w-[488px] flex flex-wrap game-images-box h-[450px] gap-2 max-[535px]:mx-auto max-[535px]:w-[240px]">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="assets/js/game.js"></script>
+</body>
+
+</html>
