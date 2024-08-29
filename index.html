@@ -11,7 +11,7 @@
 <body class="dark:bg-gray-900">
     <!-- npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch -->
 
-    <header class="text-gray-400 bg-slate-50 dark:bg-gray-900 ">
+    <header class="text-gray-400 bg-slate-50 dark:bg-gray-900 header-h">
         <div class="container mx-auto flex flex-wrap px-5 flex-col md:flex-row items-center">
             <a
                 class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
@@ -37,11 +37,11 @@
         </div>
     </header>
 
-    <main class="text-gray-400 bg-slate-50 dark:bg-gray-900 ">
+    <main class="text-gray-400 bg-slate-50 dark:bg-gray-900 flex">
 
 
         <aside id="default-sidebar"
-            class="fixed  left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+            class="left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
             aria-label="Sidebar">
             <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
                 <ul class="space-y-2 font-medium aside-res">
@@ -56,7 +56,7 @@
         </aside>
 
 
-        <div class="p-4 sm:ml-64">
+        <div class="p-4 w-full">
             <select
                 class="platform-sort w-72 p-4 border text-black dark:text-white dark:border-white rounded-lg me-10 dark:bg-gray-900">
                 <option value="all" selected disabled>Platforms</option>
