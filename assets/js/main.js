@@ -46,25 +46,25 @@ elAsideResult.addEventListener("click", (evt) => {
     let slug = evt.target.dataset.gameSlug
 
     console.log(slug)
-    if(evt.target.matches("li")){
+    if (evt.target.matches("li")) {
         fetch(API_URL + "games" + "?key=" + API_KEY + `&genres=${slug}`).then(data => data.json()).then((data) => {
             console.log(data)
             renderGames(data.results)
         })
     }
-    if(evt.target.matches("a")){
+    if (evt.target.matches("a")) {
         fetch(API_URL + "games" + "?key=" + API_KEY + `&genres=${slug}`).then(data => data.json()).then((data) => {
             console.log(data)
             renderGames(data.results)
         })
     }
-    if(evt.target.matches("span")){
+    if (evt.target.matches("span")) {
         fetch(API_URL + "games" + "?key=" + API_KEY + `&genres=${slug}`).then(data => data.json()).then((data) => {
             console.log(data)
             renderGames(data.results)
         })
     }
-    if(evt.target.matches("img")){
+    if (evt.target.matches("img")) {
         fetch(API_URL + "games" + "?key=" + API_KEY + `&genres=${slug}`).then(data => data.json()).then((data) => {
             console.log(data)
             renderGames(data.results)
@@ -168,7 +168,7 @@ const renderGames = (arr) => {
 }
 
 elGameResult.addEventListener("click", (evt) => {
-    const url = "http://127.0.0.1:5500/game.html?";
+    const url = "https://game-hub-mauve-seven.vercel.app/game.html?";
     let id = evt.target.dataset.gameId;
 
     console.log(id);
